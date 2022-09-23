@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
 import MarkDownComponent from "./components/MarkDownComponent";
-import Test from "./components/MarkDownComponent";
 import PageWrapper from "./components/PageWrapper";
 import { editorActions, EditorContext } from "./state/contexts/EditorContext";
 import styles from './App.module.css'

@@ -1,8 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faToggleOff, faToggleOn } from '@fortawesome/free-solid-svg-icons'
+import { faToggleOff, faToggleOn } from '@fortawesome/free-solid-svg-icons'
 import { editorActions, EditorContext } from '../state/contexts/EditorContext'
-import styles from './Header.module.css'
+import  './Header.css'
 import themes from '../utils/themes'
 const Header = () => {
     const { state, dispatch } = React.useContext(EditorContext)
@@ -17,15 +17,15 @@ const Header = () => {
     }
 
     return (
-        <div className={styles.header_wrapper}>
+        <div className={'header_wrapper'}>
 
-            <div className={styles.header_container}>
+            <div className={'header_container'}>
                 <div>
                     {/* <FontAwesomeIcon icon={faBars} size={'2x'} className="cursor-pointer" /> */}
-                    <h2 className=''>Tech-Friday MD</h2>
+                    <h2 className='header-left'>Tech-Friday MD</h2>
                 </div>
-                <div className={styles.header_right_wrapper}>
-                    <select name="select" id="" onChange={handleThemeChange} className="bg-orange-700 text-zinc-100 w-24 border-white px-1 h-fit rounded text-sm md:text-lg">
+                <div className={'header_right_wrapper'}>
+                    <select name="select" id="" onChange={handleThemeChange} className="select-theme">
                         {
                             Object.keys(themes.themes).map((key) => {
                                 return (
