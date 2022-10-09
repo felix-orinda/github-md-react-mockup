@@ -49,3 +49,8 @@ th {
   background-color: #04aa6d;
   color: white;
 }
+blockquote{
+  padding:10px;
+  border-radius:8px;
+  border-left:solid 0 gray;
+}
